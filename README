@@ -1,0 +1,16 @@
+Repo based on distributed source from Node organization
+=========================================================================
+This follow on link 
+https://nodejs.org/dist/
+=========================================================================
+
+
+Step build and start run docker
+=========================================================================
+docker build -t node:14.19.3 --build-arg NODE_VER=14.19.3 .
+docker run -it node:14.19.3 /bin/bash
+=========================================================================
+docker build -t node:16.15.0 --build-arg NODE_VER=16.15.0 .
+docker tag node:16.15.0 <dockerhub-accountname>/fx-node:16.15.0
+docker push <dockerhub-accountname>/fx-node:16.15.0
+
